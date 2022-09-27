@@ -1,6 +1,7 @@
 <template>
-  <h3 v-if="date">Date is {{date.toLocaleDateString()}}</h3>
-  <CalendarMonth v-model="date"/>
+  <div class="calendar-display-container">
+    <CalendarMonth v-model="date"/>
+  </div>
 </template>
 
 <script setup>
@@ -12,5 +13,8 @@ const date = ref();
 </script>
 
 <style scoped>
-
+.calendar-display-container {
+  width: 300px;
+  margin: 30px auto;
+}
 </style>
