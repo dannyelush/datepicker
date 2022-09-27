@@ -7,8 +7,8 @@
 import CalendarMonth from './components/CalendarMonth.vue';
 import { ref } from 'vue'
 
-const date = ref(new Date(2023, 3, 12));
-//const date = ref();
+//const date = ref(new Date(2023, 3, 12));
+const date = ref();
 </script>
 
 <style scoped>
